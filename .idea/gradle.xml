@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01 Activity Life Cycle" />
+            <option value="$PROJECT_DIR$/02 ListView, Fragment, ViewPager" />
+            <option value="$PROJECT_DIR$/03 MultiTypeListView" />
+            <option value="$PROJECT_DIR$/04 Checkable, SharedPreference" />
+            <option value="$PROJECT_DIR$/05 Realm(Local DB)" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
