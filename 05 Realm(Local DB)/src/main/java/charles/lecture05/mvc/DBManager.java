@@ -53,6 +53,10 @@ public class DBManager {
 
     }
 
+   public PhoneBook getPhoneBook(long id) {
+        return realm.where(PhoneBook.class).equalTo(PhoneBook.FIELD_ID, id).findFirst();
+    }
+
 
     /**
      * 1. UUID.randomUUID():String형으로 고유 아이디 생성하는법. 100%아님 99.9999999....
