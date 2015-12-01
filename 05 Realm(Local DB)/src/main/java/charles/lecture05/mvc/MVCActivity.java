@@ -31,6 +31,7 @@ public class MVCActivity extends AppCompatActivity {
         //렘에다가 직접적으로 리스너를 달아버림
         Realm.getDefaultInstance().addChangeListener(changeListener);
 
+
         listView = (ListView) findViewById(R.id.listView);
         mAdapter = new CustomAdapter(this);
         listView.setAdapter(mAdapter);
@@ -38,9 +39,10 @@ public class MVCActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                DBManager.getInstance().delete(mAdapter.getName(position));
+                DBManager.getInstance().delete(mAdapter.getItemId(position));
             }
         });
+
 
     }
 
@@ -48,7 +50,7 @@ public class MVCActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         //리스너해제 메모리 누수 방지
-        Realm.getDefaultInstance().removeChangeListener(changeListener);
+//        Realm.getDefaultInstance().removeChangeListener(changeListener);
     }
 
     @Override

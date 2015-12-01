@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import charles.lecture05.PhoneBook;
-import io.realm.Realm;
 import io.realm.RealmResults;
 
 /**
@@ -27,7 +26,7 @@ public class CustomAdapter extends BaseAdapter {
 
     public CustomAdapter(Context context) {
         this.context = context;
-        items = Realm.getDefaultInstance().allObjects(PhoneBook.class);
+        items = DBManager.getInstance().getPhoneBookResult();
     }
 
     public String getName(int position) {
@@ -46,7 +45,7 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return items.get(position).getId();
     }
 
     @Override

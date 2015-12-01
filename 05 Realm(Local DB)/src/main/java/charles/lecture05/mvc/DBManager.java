@@ -1,5 +1,7 @@
 package charles.lecture05.mvc;
 
+import android.util.Log;
+
 import charles.lecture05.PhoneBook;
 import io.realm.Realm;
 import io.realm.RealmResults;
@@ -8,6 +10,9 @@ import io.realm.RealmResults;
  * Created by Charles on 15. 11. 25..
  */
 public class DBManager {
+
+    public static final String TAG = "DBManager";
+
     private static DBManager instance = new DBManager();
     private Realm realm;
 
@@ -32,28 +37,32 @@ public class DBManager {
         realm.commitTransaction();
     }
 
-    public void delete(String name) {
+    public void delete(long id) {
+        Log.e(TAG, "id:" + id);
         realm.beginTransaction();
-        realm.where(PhoneBook.class).equalTo(PhoneBook.FIELD_NAME, name).findFirst().removeFromRealm();
+        realm.where(PhoneBook.class).equalTo(PhoneBook.FIELD_ID, id).findFirst().removeFromRealm();
         realm.commitTransaction();
     }
 
     public RealmResults<PhoneBook> getPhoneBookResult() {
         //조회
-        return realm.where(PhoneBook.class).findAll();
+//        return realm.where(PhoneBook.class).findAll();
+        return realm.allObjectsSorted(PhoneBook.class, PhoneBook.FIELD_ID, true);
     }
 
     public long generateId() {
-        RealmResults<PhoneBook> results = getPhoneBookResult();
+//        RealmResults<PhoneBook> results = getPhoneBookResult();
+        RealmResults<PhoneBook> results = realm.allObjectsSorted(PhoneBook.class, PhoneBook.FIELD_ID, true);
         if (results.size() == 0) {
             return 0;
         } else {
-            return results.get(results.size()-1).getId() + 1;
+            return results.get(results.size() - 1).getId() + 1;
         }
+
 
     }
 
-   public PhoneBook getPhoneBook(long id) {
+    public PhoneBook getPhoneBook(long id) {
         return realm.where(PhoneBook.class).equalTo(PhoneBook.FIELD_ID, id).findFirst();
     }
 
