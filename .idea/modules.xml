@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01 Activity Life Cycle/01 Activity Life Cycle.iml" filepath="$PROJECT_DIR$/01 Activity Life Cycle/01 Activity Life Cycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/02 ListView, Fragment, ViewPager/02 ListView, Fragment, ViewPager.iml" filepath="$PROJECT_DIR$/02 ListView, Fragment, ViewPager/02 ListView, Fragment, ViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-1 Fragment Communication/02-1 Fragment Communication.iml" filepath="$PROJECT_DIR$/02-1 Fragment Communication/02-1 Fragment Communication.iml" />
       <module fileurl="file://$PROJECT_DIR$/03 MultiTypeListView/03 MultiTypeListView.iml" filepath="$PROJECT_DIR$/03 MultiTypeListView/03 MultiTypeListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/04 Checkable, SharedPreference/04 Checkable, SharedPreference.iml" filepath="$PROJECT_DIR$/04 Checkable, SharedPreference/04 Checkable, SharedPreference.iml" />
       <module fileurl="file://$PROJECT_DIR$/05 Realm(Local DB)/05 Realm(Local DB).iml" filepath="$PROJECT_DIR$/05 Realm(Local DB)/05 Realm(Local DB).iml" />
