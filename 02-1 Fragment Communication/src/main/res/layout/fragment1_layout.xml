@@ -9,7 +9,7 @@
         android:id="@+id/edit_text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Input what you want"/>
+        android:hint="프레그먼트B로 전달하고 싶은 내용을 여기에 입력"/>
 
     <Button
         android:id="@+id/send1"

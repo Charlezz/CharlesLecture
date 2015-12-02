@@ -11,7 +11,7 @@ import charles.fragment2.example2.ExampleActivity2;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button example1, example2, example3;
+    private Button example1, example2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         example1 = (Button) findViewById(R.id.example1);
         example2 = (Button) findViewById(R.id.example2);
-        example3 = (Button) findViewById(R.id.example3);
 
         example1.setOnClickListener(this);
         example2.setOnClickListener(this);
-        example3.setOnClickListener(this);
 
     }
 
