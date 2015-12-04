@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/01 Activity Life Cycle" />
             <option value="$PROJECT_DIR$/02 ListView, Fragment, ViewPager" />
             <option value="$PROJECT_DIR$/02-1 Fragment Communication" />
+            <option value="$PROJECT_DIR$/02-2 ViewPager" />
             <option value="$PROJECT_DIR$/03 MultiTypeListView" />
             <option value="$PROJECT_DIR$/04 Checkable, SharedPreference" />
             <option value="$PROJECT_DIR$/05 Realm(Local DB)" />

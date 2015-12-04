@@ -1,1 +1,1 @@
-include ':01 Activity Life Cycle', ':02 ListView, Fragment, ViewPager', ':03 MultiTypeListView', ':04 Checkable, SharedPreference', ':02-1 Fragment Communication', '05 Realm(Local DB)'
+include ':01 Activity Life Cycle', ':02 ListView, Fragment, ViewPager', ':03 MultiTypeListView', ':04 Checkable, SharedPreference', ':02-1 Fragment Communication', ':02-2 ViewPager', '05 Realm(Local DB)'
