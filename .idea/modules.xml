@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/03 MultiTypeListView/03 MultiTypeListView.iml" filepath="$PROJECT_DIR$/03 MultiTypeListView/03 MultiTypeListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/04 Checkable, SharedPreference/04 Checkable, SharedPreference.iml" filepath="$PROJECT_DIR$/04 Checkable, SharedPreference/04 Checkable, SharedPreference.iml" />
       <module fileurl="file://$PROJECT_DIR$/05 Realm(Local DB)/05 Realm(Local DB).iml" filepath="$PROJECT_DIR$/05 Realm(Local DB)/05 Realm(Local DB).iml" />
+      <module fileurl="file://$PROJECT_DIR$/06 BroadcastReceiver/06 BroadcastReceiver.iml" filepath="$PROJECT_DIR$/06 BroadcastReceiver/06 BroadcastReceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/CharlesLecture.iml" filepath="$PROJECT_DIR$/CharlesLecture.iml" />
     </modules>
   </component>
