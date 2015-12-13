@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/04 Checkable, SharedPreference" />
             <option value="$PROJECT_DIR$/05 Realm(Local DB)" />
             <option value="$PROJECT_DIR$/06 BroadcastReceiver" />
+            <option value="$PROJECT_DIR$/07 Thread" />
           </set>
         </option>
       </GradleProjectSettings>

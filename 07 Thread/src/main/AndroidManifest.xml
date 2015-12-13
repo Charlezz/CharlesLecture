@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="charles.charleslecture"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="charles.thread"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -12,8 +11,15 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ThreadActivity">
+        </activity>
+        <activity android:name=".AsyncTaskActivity">
+        </activity>
+        <activity android:name=".SimpleUiUpdateActivity">
         </activity>
     </application>
 

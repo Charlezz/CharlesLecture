@@ -8,9 +8,9 @@ import android.util.Log;
  * Created by Charles on 15. 11. 1..
  * 액티비티 생성주기 확인예제
  */
-public class FirstActivity extends Activity {
+public class MainActivity extends Activity {
 
-    public static final String TAG = "FirstActivity";
+    public static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
