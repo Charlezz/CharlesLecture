@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -115,5 +116,17 @@ public class Main2Activity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+        adapter.setOnMyButtonClickedListener(new CustomAdapter.OnMyButtonClickedListener() {
+            @Override
+            public void onMyButtonClicked(CustomData data) {
+                Log.e(TAG, data.getName());
+                Log.e(TAG, data.getProfile_path());
+                Log.e(TAG, data.getViewType()+"");
+            }
+        });
     }
+
+    public static final String TAG = "Main2Activity";
 }

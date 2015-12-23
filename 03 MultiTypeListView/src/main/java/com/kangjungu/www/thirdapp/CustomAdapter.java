@@ -67,6 +67,14 @@ public class CustomAdapter extends BaseAdapter {
                     v = new CustomView(context);
                 }
                 ((CustomView) v).setMyData(getItem(position));
+                ((CustomView) v).setOnMyButtonClickListener(new CustomView.OnMyClickListener() {
+                    @Override
+                    public void onMyButtonClick(CustomData data) {
+                        if(mListener!=null){
+                            mListener.onMyButtonClicked(data);
+                        }
+                    }
+                });
                 break;
             case VIEW_TYPE_B:
                 if (convertView != null && convertView instanceof CustomView2) {
@@ -79,4 +87,16 @@ public class CustomAdapter extends BaseAdapter {
         }
         return v;
     }
+
+    public interface OnMyButtonClickedListener{
+        void onMyButtonClicked(CustomData data);
+    }
+
+    private OnMyButtonClickedListener mListener;
+
+    public void setOnMyButtonClickedListener(OnMyButtonClickedListener listener){
+        mListener = listener;
+    }
+
+
 }

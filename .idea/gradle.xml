@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/05 Realm(Local DB)" />
             <option value="$PROJECT_DIR$/06 BroadcastReceiver" />
             <option value="$PROJECT_DIR$/07 Thread" />
+            <option value="$PROJECT_DIR$/08 Camera" />
           </set>
         </option>
       </GradleProjectSettings>

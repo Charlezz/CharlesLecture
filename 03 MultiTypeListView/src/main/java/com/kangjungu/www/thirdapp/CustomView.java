@@ -18,6 +18,7 @@ public class CustomView extends FrameLayout {
     public static final String TAG = "CustomView";
 
     private Context mContext;
+    private FrameLayout frameLayout;
 
     public CustomView(Context context) {
         super(context);
@@ -26,16 +27,22 @@ public class CustomView extends FrameLayout {
         imageView = (ImageView) v.findViewById(R.id.chat_image);
         textView_title = (TextView) v.findViewById(R.id.chat_title);
         textView_body = (TextView) v.findViewById(R.id.chat_body);
+
+        frameLayout = (FrameLayout) v.findViewById(R.id.frameLayout);
     }
 
     private ImageView imageView;
     private TextView textView_title;
     private TextView textView_body;
 
-    public void setMyData(CustomData data){
+    private CustomData data;
+
+    public void setMyData(CustomData data) {
+        this.data = data;
+
         String color = data.getProfile_path();
 
-        if(color.equals("1"))
+        if (color.equals("1"))
             imageView.setImageResource(R.drawable.iu);
         else
             imageView.setImageResource(R.drawable.yun);
@@ -64,8 +71,27 @@ public class CustomView extends FrameLayout {
 
 
 //        textView_body.setText("long:"+date.getTime());
-        textView_body.setText("date:"+sdf.format(date));
+        textView_body.setText("date:" + sdf.format(date));
+
+
+        frameLayout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mListener != null) {
+                    mListener.onMyButtonClick(CustomView.this.data);
+                }
+            }
+        });
     }
 
+    public interface OnMyClickListener {
+        void onMyButtonClick(CustomData data);
+    }
+
+    private OnMyClickListener mListener;
+
+    public void setOnMyButtonClickListener(OnMyClickListener listener) {
+        mListener = listener;
+    }
 
 }

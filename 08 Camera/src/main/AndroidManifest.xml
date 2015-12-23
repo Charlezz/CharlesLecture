@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="charles.charleslecture"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest
+    package="com.tistory.charlezz.camerasimply"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--write퍼미션은 read퍼미션을 암묵적으로 갖게 된다-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -15,8 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".EmptyActivity1">
-        </activity>
+
+
     </application>
 
 </manifest>

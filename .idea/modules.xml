@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/05 Realm(Local DB)/05 Realm(Local DB).iml" filepath="$PROJECT_DIR$/05 Realm(Local DB)/05 Realm(Local DB).iml" />
       <module fileurl="file://$PROJECT_DIR$/06 BroadcastReceiver/06 BroadcastReceiver.iml" filepath="$PROJECT_DIR$/06 BroadcastReceiver/06 BroadcastReceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/07 Thread/07 Thread.iml" filepath="$PROJECT_DIR$/07 Thread/07 Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08 Camera/08 Camera.iml" filepath="$PROJECT_DIR$/08 Camera/08 Camera.iml" />
       <module fileurl="file://$PROJECT_DIR$/CharlesLecture.iml" filepath="$PROJECT_DIR$/CharlesLecture.iml" />
     </modules>
   </component>
