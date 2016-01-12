@@ -13,8 +13,4 @@
     tools:context="com.tistory.charlezz.alarm.DateActivity"
     tools:showIn="@layout/activity_date">
 
-    <andr
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
 </RelativeLayout>
